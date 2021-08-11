@@ -39,6 +39,8 @@ RE_PHONE_SIGNATURE = re.compile(r'''
                        ^sent[ ]([\S]*[ ])?from[ ]my[ ]BlackBerry.*$
                        |
                        ^Enviado[ ]desde[ ]mi[ ]([\S]+[ ]){0,2}BlackBerry.*$
+                       |
+                       ^get[ ]Outlook[ ]{1}for[\s,!\w].*$ 
                    )
                    .*
                )
