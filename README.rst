@@ -62,7 +62,7 @@ machine learning fancy stuff:
     --
     Bob Smith"""
 
-    text, signature = extract_signature(message)
+    text, signature_ = extract_signature(message)
     # text == "Wow. Awesome!"
     # signature == "--\nBob Smith"
 
@@ -85,7 +85,7 @@ the power of machine learning algorithms:
     John Doe
     via mobile"""
 
-    text, signature = signature.extract(message, sender='john.doe@example.com')
+    text, signature_ = signature.extract(message, sender='john.doe@example.com')
     # text == "Thanks Sasha, I can't go any higher and is why I limited it to the\nhomepage."
     # signature == "John Doe\nvia mobile"
 
